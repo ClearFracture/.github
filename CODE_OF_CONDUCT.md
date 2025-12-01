@@ -1,75 +1,87 @@
-# Code of Conduct
+# Coding Standards
 
-## Our Pledge
+## Purpose
 
-We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+This document outlines the coding standards and best practices for ClearFracture projects. Following these standards ensures consistency, maintainability, and quality across our codebase.
 
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community.
+## General Principles
 
-## Our Standards
+* Write clear, readable, and maintainable code
+* Follow the principle of least surprise
+* Keep it simple - avoid over-engineering
+* Document complex logic and non-obvious decisions
+* Write code for humans first, computers second
 
-Examples of behavior that contributes to a positive environment for our community include:
+## Code Quality
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the overall community
+### Code Structure
 
-Examples of unacceptable behavior include:
+* Keep functions and methods focused on a single responsibility
+* Limit function length to what can be understood at a glance (typically under 50 lines)
+* Use meaningful and descriptive names for variables, functions, and classes
+* Avoid deep nesting - prefer early returns and guard clauses
+* Keep files organized and appropriately sized
 
-* The use of sexualized language or imagery, and sexual attention or advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
+### Documentation
 
-## Enforcement Responsibilities
+* Add comments to explain "why", not "what" (code should be self-documenting for "what")
+* Document all public APIs, including parameters, return values, and exceptions
+* Keep documentation up-to-date with code changes
+* Include examples for complex functionality
+* Use clear and concise language
 
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+### Version Control
 
-Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
+* Write clear, descriptive commit messages
+* Keep commits atomic and focused on a single change
+* Reference issue/ticket numbers in commit messages when applicable
+* Review your own changes before creating a pull request
+* Ensure code is properly tested before committing
 
-## Scope
+## Code Review Standards
 
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+### Submitting Code for Review
 
-## Enforcement
+* Ensure all tests pass before requesting review
+* Provide context and explanation in the pull request description
+* Keep pull requests focused and reasonably sized
+* Respond promptly to review feedback
+* Be open to suggestions and alternative approaches
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement. All complaints will be reviewed and investigated promptly and fairly.
+### Reviewing Code
 
-All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+* Be constructive and respectful in feedback
+* Focus on the code, not the person
+* Explain the reasoning behind suggestions
+* Approve changes that improve the codebase, even if not perfect
+* Recognize good work and clever solutions
 
-## Enforcement Guidelines
+## Testing
 
-Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
+* Write tests for new functionality
+* Maintain or improve test coverage with changes
+* Ensure tests are reliable and not flaky
+* Write clear test names that describe what is being tested
+* Include both positive and negative test cases
 
-### 1. Correction
+## Security
 
-**Community Impact**: Use of inappropriate language or other behavior deemed unprofessional or unwelcome in the community.
+* Never commit secrets, credentials, or sensitive data
+* Validate and sanitize all user inputs
+* Follow security best practices for the language and framework
+* Keep dependencies up-to-date
+* Report security vulnerabilities responsibly
 
-**Consequence**: A private, written warning from community leaders, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate. A public apology may be requested.
+## Performance
 
-### 2. Warning
+* Consider performance implications of code changes
+* Avoid premature optimization
+* Profile and measure before optimizing
+* Document performance-critical sections
 
-**Community Impact**: A violation through a single incident or series of actions.
+## Consistency
 
-**Consequence**: A warning with consequences for continued behavior. No interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, for a specified period of time. This includes avoiding interactions in community spaces as well as external channels like social media. Violating these terms may lead to a temporary or permanent ban.
-
-### 3. Temporary Ban
-
-**Community Impact**: A serious violation of community standards, including sustained inappropriate behavior.
-
-**Consequence**: A temporary ban from any sort of interaction or public communication with the community for a specified period of time. No public or private interaction with the people involved, including unsolicited interaction with those enforcing the Code of Conduct, is allowed during this period. Violating these terms may lead to a permanent ban.
-
-### 4. Permanent Ban
-
-**Community Impact**: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals.
-
-**Consequence**: A permanent ban from any sort of public interaction within the community.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 2.0, available at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
+* Follow existing code style and patterns in the project
+* Use language-specific style guides and linters
+* Maintain consistency within a file and across the project
+* When in doubt, discuss with the team before deviating from established patterns
