@@ -28,7 +28,7 @@ body:
       description: What did you expect to happen?
       placeholder: Describe what you expected to happen
     validations:
-      required: true
+      required: false
   
   - type: textarea
     id: actual-behavior
@@ -37,7 +37,7 @@ body:
       description: What actually happened?
       placeholder: Describe what actually happened
     validations:
-      required: true
+      required: false
   
   - type: textarea
     id: additional-context

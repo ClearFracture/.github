@@ -24,7 +24,7 @@ body:
       description: What should this feature do? How should it work?
       placeholder: Describe the expected functionality and behavior
     validations:
-      required: true
+      required: false
   
   - type: textarea
     id: why
@@ -33,7 +33,7 @@ body:
       description: Why is this feature important? What problem does it solve?
       placeholder: Explain the motivation and use case for this feature
     validations:
-      required: true
+      required: false
   
   - type: textarea
     id: additional-context
